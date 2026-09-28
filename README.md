@@ -24,6 +24,12 @@
 dsh plugin --profile web add github:ouqiting/dsh-2api
 ```
 
+DSH 0.1.7-rc.1 ~ 0.1.7-rc.2 的用户请钉 tag 0.7.0 版本安装：
+
+```bash
+dsh plugin --profile web add github:ouqiting/dsh-2api#v0.7.0
+```
+
 或从本地副本安装：
 
 ```bash

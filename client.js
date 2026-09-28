@@ -73,8 +73,10 @@ window.__ModuleLoader__.load({
       invalid: "epg_invalid", hint: "epg_hint",
     };
 
+    // Display title/description live in the package's locale/*.json, which the
+    // Plugins page reads as host metadata; this dictionary only feeds the card's
+    // own `t`, so it carries no title of its own.
     const en = {
-      title: "EPSE leakage guard",
       description: "DS2api Companion Plugin Settings.",
       maxRegenerations: "Regenerations per step",
       maxRegenerationsHint: "How many times one step may be forced to regenerate after a framed reply (min 1).",
@@ -95,7 +97,6 @@ window.__ModuleLoader__.load({
       invalidNumber: "Enter a whole number, or leave blank to use the default.",
     };
     const zh = {
-      title: "EPSE 泄露守护",
       description: "DS2api 辅助插件设置。",
       maxRegenerations: "每步重生成次数",
       maxRegenerationsHint: "模型把工具调用框架写进文本时，同一 step 最多强制重生成多少次（最小 1）。",

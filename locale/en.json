@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "EPSE leakage guard",
+    "description": "DS2api companion plugin: detects EPSE tool-call frames the model wrote as text and regenerates that step in place."
+  }
+}
